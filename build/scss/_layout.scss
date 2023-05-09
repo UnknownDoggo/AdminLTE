@@ -2,7 +2,7 @@
 // Core: Layout
 //
 
-html.scroll-smooth {
+html {
   scroll-behavior: smooth;
 }
 
@@ -651,7 +651,7 @@ body:not(.layout-fixed) {
   }
 }
 
-.dark-mode {
+@include dark-mode () {
   background-color: $dark-main-bg;
   color: $white;
 
